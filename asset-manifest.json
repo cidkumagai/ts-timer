@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/ts-timer/static/js/main.8e31775a.js",
+    "static/media/flower.mp3": "/ts-timer/static/media/flower.e748e27c33610811b074.mp3",
+    "static/media/spring.mp3": "/ts-timer/static/media/spring.12f04e8db79aac2fd235.mp3",
+    "static/media/elise.mp3": "/ts-timer/static/media/elise.3b246bbc7e06a83b6844.mp3",
+    "static/media/walnut.mp3": "/ts-timer/static/media/walnut.ac6d8b0e852a75437b69.mp3",
+    "static/media/dog.mp3": "/ts-timer/static/media/dog.c078201096c098beff0c.mp3",
+    "static/media/flower.png": "/ts-timer/static/media/flower.dc04d07ad0dbb078eb3b.png",
+    "static/media/dog.png": "/ts-timer/static/media/dog.80f874f8db5f45609954.png",
+    "static/media/elise.png": "/ts-timer/static/media/elise.bb901df087bac5a128f2.png",
+    "static/media/walnut.png": "/ts-timer/static/media/walnut.e0f9d10839c340e8a84b.png",
+    "static/media/spring.png": "/ts-timer/static/media/spring.4f3682cc16c262e1a692.png",
+    "index.html": "/ts-timer/index.html",
+    "main.8e31775a.js.map": "/ts-timer/static/js/main.8e31775a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8e31775a.js"
+  ]
+}
