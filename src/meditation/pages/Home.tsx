@@ -1,4 +1,4 @@
-import { Box, ListItem, Text, UnorderedList } from '@chakra-ui/react';
+import { Box, Flex, ListItem, Spacer, Text, UnorderedList } from '@chakra-ui/react';
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +27,11 @@ export const Home = () => {
                                             dispatch(changeType(item.type))
                                         }
                                     >
-                                        {item.title}
+                                        <Flex>
+                                            <Text>{item.title}</Text>
+                                            <Spacer />
+                                            <Text>{item.composer }</Text>
+                                        </Flex>
                                     </ListItem>
                                 </Link>
                             );

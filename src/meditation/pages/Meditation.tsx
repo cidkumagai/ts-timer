@@ -1,4 +1,4 @@
-import { Box, Button, Img } from '@chakra-ui/react';
+import { Box, Button, Flex, Img, Spacer, Text } from '@chakra-ui/react';
 import { useEffect } from 'react';
 import { AiFillCaretRight, AiOutlinePause } from 'react-icons/ai';
 
@@ -17,7 +17,12 @@ export const Meditation = () => {
     );
     const meditation = meditations.filter((e) => e.type === playType);
     return (
-        <Box width={'100%'} height={'100vh'} backgroundColor='gray.700' paddingTop={'50px'}>
+        <Box
+            width={'100%'}
+            height={'100vh'}
+            backgroundColor='gray.700'
+            paddingTop={'50px'}
+        >
             <Box
                 margin={'50px auto 0 auto'}
                 width={'320px'}
@@ -35,6 +40,11 @@ export const Meditation = () => {
                     margin={' 0 auto'}
                     objectFit={'contain'}
                 />
+                <Flex width={'90%'} margin={'0 auto'}>
+                    <Text>{meditation[0].title}</Text>
+                    <Spacer />
+                    <Text>{meditation[0].composer}</Text>
+                </Flex>
                 <Sound />
                 <Button
                     zIndex={3}

@@ -1,16 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { RootState } from '../app/store';
 
-import waltzSound from './audios/waltz1.mp3';
-import rainSound from './audios/rain.mp3';
-import sinigamiImage from './images/sinigami.png';
-import rainImage from './images/rain1.png';
+import dogSound from './audios/dog.mp3';
+import springSound from './audios/spring.mp3';
+import eliseSound from './audios/elise.mp3';
+import flowerSound from './audios/flower.mp3';
+import walnutSound from './audios/walnut.mp3';
+import dogImage from './images/dog.png';
+import springImage from './images/spring.png';
+import eliseImage from './images/elise.png';
+import flowerImage from './images/flower.png';
+import walnutImage from './images/walnut.png';
 
 type MeditationState = {
     playFlag: boolean;
     counttime: number;
     meditations: {
         type: string;
+        composer: string;
         title: string;
         image: string;
         sound: string;
@@ -24,18 +31,44 @@ const initialState: MeditationState = {
     counttime: 0,
     meditations: [
         {
-            type: 'waltz1',
-            title: '死神とワルツ',
-            image: sinigamiImage,
-            sound: waltzSound,
-            time: 1000 * 116,
+            type: 'dog',
+            composer: 'ショパン',
+            title: '子犬のワルツ',
+            image: dogImage,
+            sound: dogSound,
+            time: 1000 * 101,
         },
         {
-            type: 'rain',
-            title: '雨音',
-            image: rainImage,
-            sound: rainSound,
-            time: 1000 * 126,
+            type: 'spring',
+            composer: 'ヴィヴァルディ',
+            title: '春',
+            image: springImage,
+            sound: springSound,
+            time: 1000 * 184,
+        },
+        {
+            type: 'elise',
+            composer: 'ベートーヴェン',
+            title: 'エリーゼのために',
+            image: eliseImage,
+            sound: eliseSound,
+            time: 1000 * 157,
+        },
+        {
+            type: 'flower',
+            composer: 'チャイコフスキー',
+            title: '花のワルツ',
+            image: flowerImage,
+            sound: flowerSound,
+            time: 1000 * 382,
+        },
+        {
+            type: 'walnut',
+            composer: 'チャイコフスキー',
+            title: 'くるみ割り人形',
+            image: walnutImage,
+            sound: walnutSound,
+            time: 1000 * 145,
         },
     ],
 };
