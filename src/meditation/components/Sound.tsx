@@ -5,8 +5,9 @@ import {
     SliderTrack,
     Text,
 } from '@chakra-ui/react';
-import { Fragment, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import RangeTouch from 'rangetouch';
 
 import { useAppSelector } from '../../app/hooks';
 import { changeFlag } from '../meditationSlice';
@@ -19,6 +20,9 @@ export const Sound = () => {
     const [nowTime, setNowTime] = useState(0);
     const soundRef = useRef<HTMLAudioElement>(null);
     const seekRef = useRef<HTMLInputElement>(null);
+    useEffect(() => {
+        new RangeTouch(seekRef.current);
+    })
     if (
         soundRef !== null &&
         soundRef.current !== null &&
