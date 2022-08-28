@@ -72,6 +72,7 @@ const initialState: MeditationState = {
         },
     ],
 };
+
 export const meditationSlice = createSlice({
     name: 'Meditations',
     initialState: initialState,

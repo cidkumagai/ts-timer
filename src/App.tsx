@@ -6,8 +6,8 @@ import { Meditation } from './meditation/pages/Meditation';
 function App() {
     return (
         <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/meditation' element={<Meditation />} />
+            <Route path='/ts-timer' element={<Home />} />
+            <Route path='/ts-timer/meditation' element={<Meditation />} />
         </Routes>
     );
 }
