@@ -16,7 +16,7 @@ export const Home = () => {
                     {meditations &&
                         meditations.map((item, index) => {
                             return (
-                                <Link to='ts-timer/meditation' key={index}>
+                                <Link to='/ts-timer/meditation' key={index}>
                                     <ListItem
                                         margin={'10px'}
                                         padding={'10px'}
